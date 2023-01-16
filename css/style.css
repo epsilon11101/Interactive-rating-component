@@ -1,0 +1,134 @@
+:root{
+
+    --primary_orange:hsl(25, 97%, 53%);
+
+
+    --neutral_white:hsl(0, 0%, 100%);
+    --neutral_light_grey:hsl(217, 12%, 63%);
+    --neutral_medium_grey:hsl(216, 12%, 54%);
+    --neutral_dark_blue: hsl(213, 19%, 18%);
+    --neutral_very_dark_blue:hsl(216, 12%, 8%);
+}
+
+body{
+ background-color: var(--neutral_very_dark_blue);
+ color: var(--neutral_white);
+ font-size: 15px;
+ margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.rating_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 33%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+background-image: linear-gradient(330deg,
+            hsl(216deg 12% 8%) 0%,
+            hsl(216deg 12% 9%) 11%,
+            hsl(215deg 14% 10%) 22%,
+            hsl(215deg 15% 11%) 33%,
+            hsl(215deg 16% 12%) 44%,
+            hsl(214deg 17% 14%) 56%,
+            hsl(214deg 18% 15%) 67%,
+            hsl(214deg 18% 16%) 78%,
+            hsl(214deg 19% 17%) 89%,
+            hsl(213deg 20% 18%) 100%);
+    color: var(--neutral_white);
+    /* padding: 0 20px; */
+    padding: 10px 10px;
+}
+
+.rating_card .rating_icon{
+
+
+}
+
+.rating_card h4{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.rating_card p{
+    margin-top: -10px;
+    color: var(--neutral_light_grey)
+}
+
+.rating_card .rating_num{
+    color: var(--neutral_light_grey);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content:center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
+
+.rating_card .rating_num span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--neutral_dark_blue);
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.rating_card .rating_num span:hover{
+    color: var(--neutral_white);
+    background-color: var(--neutral_light_grey);
+}
+
+
+.rating_card button{
+    color: var(--neutral_white);
+    font-size: 20px;
+    border: none;
+    background-color: var(--primary_orange);
+    border-radius: 20px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.rating_card button:hover{
+    background-color: var(--neutral_white);
+    color: var(--primary_orange);
+}
+
+.thanks_card{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.thanks_card .rating_message{
+    width: 65%;
+    height: 15%;
+    color: var(--primary_orange);
+    background-color: var(--neutral_dark_blue);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
