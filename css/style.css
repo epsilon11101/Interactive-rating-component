@@ -47,7 +47,7 @@ body{
     gap: 50px;
     width: 100%;
     height: 100vh;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 
@@ -59,7 +59,7 @@ body{
     align-content: flex-start;
     align-items: flex-start;
     width: 90%;
-    min-height: 55%;
+    min-height: 450px;
     border-radius: 15px;
     background-image: var(--gradient);
     color: var(--neutral_white);
@@ -115,7 +115,7 @@ body{
     align-items: center;
     align-content: center;
     background-image: var(--gradient);
-    width: 15%;
+    width: 50px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
@@ -185,4 +185,22 @@ body{
 .thanks_card p{
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 600px) /*and (max-width:1279px)*/{
+    .rating_card {
+            width: 500px;
+            max-height: 50%;
+            gap: 20px;
+        }
+
+    .rating_card .rating_icon {    
+            margin-top: 10px;
+                }
+
+    .thanks_card .rating_message {
+            width: 50%;
+            height: 10%;
+        }
 }
